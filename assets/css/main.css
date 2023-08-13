@@ -10,7 +10,18 @@
 /* Reset */
 
 /* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
-
+#page-wrapper:before {
+	content: "";
+	background-image: url("./../../images/patron.png");
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	background-size: 100px auto;
+  }
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 	pre, a, abbr, acronym, address, big, cite,
@@ -2504,7 +2515,7 @@
 			padding-left: 0.5em;
 		}
 
-		ul.alt {
+	ul.alt {
 			list-style: none;
 			padding-left: 0;
 		}
@@ -2981,6 +2992,7 @@
 	#page-wrapper {
 		padding-top: 3em;
 	}
+	
 
 	body.landing #page-wrapper {
 		padding-top: 0;
@@ -3328,6 +3340,8 @@
 	#main {
 		padding: 4em 0;
 	}
+	
+
 
 		#main > header {
 			text-align: center;
@@ -3464,6 +3478,24 @@
 		#cta .formerize-placeholder {
 			color: rgba(255, 255, 255, 0.75) !important;
 		}
+		.sepia{
+			filter: sepia(100%)grayscale(30%) brightness(80%) contrast(80%);
+		}
+		#page-wrapper{
+			position: relative;
+		}
+		#page-wrapper:before {
+			content: "";
+			background-image: url("./../../images/patron.png");
+			opacity: 0.4;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			z-index: -1;
+			background-size: 100px auto;
+		  }
 
 /* Wide */
 
@@ -3581,11 +3613,13 @@
 					}
 
 		/* Header */
+		
 
 			#page-wrapper {
+				position: relative;
 				padding-top: 0;
 			}
-
+			
 			#header {
 				display: none;
 			}
